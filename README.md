@@ -10,25 +10,23 @@ penayangannya
 - Dua bagian utama: Daftar koleksi K-Drama Favorit, Tambah K-Drama baru
 - Kolom tabel: Judul K-Drama, Rating, Genre, Tahun rilisnya
 - Kolom form: Judul K-Drama, Genre, Rating
-- Gambar: koleksi-1.webp
+- Gambar: IMG_2957.JPG
 ## Catatan penggunaan AI
-Tulis bagian mana yang dibantu AI dan bagian mana yang Anda
-kerjakan sendiri, atau tulis: tidak memakai AI.
+saya menggunakan AI untuk membantu saya lebih jelas ibarat memandu, saya dipandu dibagian menyambungkan github karna terminal saya sempat error beberapa kali, saya juga menggunakannya untuk mengoreksi apakah salah atau kurang untuk jawaban saya dikolom pertanyaan 
 
 
 ## Pertemuan 4 — Design token halaman profil
 - Berkas gaya yang akan dibuat: tokens.css, base.css, layout.css, komponen.css, tema.css
-- Warna utama: #2563EB (Biru laut terang), dipilih karena cocok dengan tema pastel ceria (pink, kuning, biru) namun tetap memberikan kontras yang tegas dan aman (lolos uji 4.5:1) di atas latar kuning pastel yang sangat lembut.
-
+- Warna utama: #2563EB, dipiloh karna memberikan kesan bersih dan mudah dibaca
 ### Token yang saya tetapkan
-
 | Token | Nilai | Untuk apa |
 |---|---|---|
-| --color-primary | #2563EB | tombol, tautan, penanda |
-| --color-fg | #172554 | warna teks utama |
-| --color-bg | #FEFCE8 | latar halaman |
-| --radius-md | 0.75rem | sudut membulat pada tombol dan kartu |
+| --color-primary | #1D3A8C | tombol, tautan, penanda |
+| --color-fg | #0F172A | warna teks utama |
+| --color-bg | #FFFF | latar halaman |
+| --radius-md | 0.5rem | sudut tombol dan kartu |
 | --space-4 | 1rem | jarak standar antar elemen |
 
 Kriteria selesai saya: mengubah --color-primary di satu baris harus mengubah warna tombol, tautan, judul, dan garis fokus.
-
+## Catatan penggunaan AI
+Saya menggunakan AI dibagian rekomendasi warna, karna pada pertemuan sebelumnya saya belum bisa menyambungkan README jadi saya menggunakan langkah ws dan dipandu AI, saya juga menggunakannya untuk mencari saran poster dan membantu saya mengoreksi bagian pertanyaan yang sekiranya saya rasa kurang.
