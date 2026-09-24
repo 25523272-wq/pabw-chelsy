@@ -29,4 +29,4 @@ saya menggunakan AI untuk membantu saya lebih jelas ibarat memandu, saya dipandu
 
 Kriteria selesai saya: mengubah --color-primary di satu baris harus mengubah warna tombol, tautan, judul, dan garis fokus.
 ## Catatan penggunaan AI
-Saya menggunakan AI dibagian rekomendasi warna, karna pada pertemuan sebelumnya saya belum bisa menyambungkan README jadi saya menggunakan langkah ws dan dipandu AI, saya juga menggunakannya untuk mencari saran poster dan membantu saya mengoreksi bagian pertanyaan yang sekiranya saya rasa kurang.
+Saya menggunakan AI dibagian rekomendasi warna, karna pada pertemuan sebelumnya saya belum bisa menyambungkan README jadi saya menggunakan langkah ws dan dipandu AI, saya juga menggunakannya untuk mencari saran poster dan membantu saya mengoreksi bagian pertanyaan yang sekiranya saya.
