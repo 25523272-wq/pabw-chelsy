@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chelsy K-Drama Vault</title>
+</head>
+<body>
+    <!-- TODO C.1: header dan nav -->
+    <header></header>
+        <h1>Chelsy K-Drama Vault</h1>
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="#daftar-kdrama">Daftar K-Drama</a></li>
+                <li><a href="#tambah-kdrama">Tambah K-Drama</a></li>
+                <li><a href="#tentang-saya">Tentang Saya</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- TODO C.2: main pembungkus utama -->
+    <main>
+        <!-- TODO D.1: section pertama berisi tabel data & gambar -->
+        <section id="daftar-kdrama">
+            <h2>Daftar K-Drama Favorit</h2>
+            
+            <table>
+                <caption>Daftar drama Korea yang pernah ditonton beserta genre, tahun rilis, dan rating</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Judul Drama</th>
+                        <th scope="col">Genre</th>
+                        <th scope="col">Tahun Rilis</th>
+                        <th scope="col">Rating Saya</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">The Trauma Code: Heroes on Call</th>
+                        <td>medical drama, action, and comedy</td>
+                        <td>2025</td>
+                        <td>100/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Twenty-Five Twenty-One</th>
+                        <td>Coming-of-age, Drama</td>
+                        <td>2022</td>
+                        <td>9/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hospital Playlist</th>
+                        <td>Medical, Slice of Life</td>
+                        <td>2020</td>
+                        <td>8/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Hometown Cha-Cha-Cha</th>
+                        <td>Romantic, Comedy</td>
+                        <td>2021</td>
+                        <td>9.5/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Can This Love Be Translated?</th>
+                        <td>Romantic, Comedy</td>
+                        <td>2026</td>
+                        <td>8.5/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Queen of Tears</th>
+                        <td>Romance</td>
+                        <td>2024</td>
+                        <td>9.2/10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Bloodhounds</th>
+                        <td>Action</td>
+                        <td>2023</td>
+                        <td>10/10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <figure>
+                <img src="kdrama-favorit.webp" alt="Poster gabungan beberapa drama Korea favorit pilihan Chelsy" width="690" height="400" loading="lazy">
+                <figcaption>Beberapa cuplikan adegan dari K-Drama favorit saya.</figcaption>
+            </figure>
+        </section>
+
+        <!-- TODO E.1: section kedua berisi form -->
+        <section id="tambah-kdrama">
+            <h2>Tambah K-Drama Baru</h2>
+            
+            <form action="/simpan" method="post">
+                <p>
+                    <label for="judul-drama">Judul Drama</label>
+                    <input type="text" id="judul-drama" name="judul-drama" required>
+                </p>
+                <p>
+                    <label for="genre-drama">Genre</label>
+                    <input type="text" id="genre-drama" name="genre-drama" required>
+                </p>
+                <p>
+                    <label for="rating-drama">Rating Saya (1 - 10)</label>
+                    <input type="number" id="rating-drama" name="rating-drama" min="1" max="10" step="0.5" required>
+                </p>
+                <button type="submit">Simpan</button>
+            </form>
+        </section>
+        
+        <section id="tentang-saya">
+            <h2>Tentang Saya</h2>
+            <p>Halaman ini dikelola oleh Chelsy Alfaddhillah sebagai tugas PABW.</p>
+        </section>
+    </main>
+
+    <!-- TODO C.3: footer -->
+    <footer>
+        <p>Chelsy Alfaddhillah 25523272 </p>
+    </footer>
+</body>
+</html>
+
+
