@@ -3,18 +3,17 @@ header {
   border-bottom: 1px solid var(--color-border);
 }
 
-.header-baris {      
-  display: flex;
-  align-items: center;            
-  justify-content: space-between; 
+.header-baris {
+  align-items: center;
+  justify-content: space-between;
   gap: var(--space-4);
-  flex-wrap: wrap;                 
+  flex-wrap: wrap;
 }
 
 nav ul {
   display: flex;
   gap: var(--space-4);
-  list-style: none;              
+  list-style: none;               
   padding: 0;
 }
 
@@ -30,21 +29,23 @@ nav a:hover {
 main {
   display: flex;
   flex-direction: column;
-  gap: var(--section-gap);   
+  gap: var(--section-gap);
   padding-block: var(--space-6);
 }
 
 .katalog {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;           
   gap: var(--space-4);
 }
 
-.kartu__kaki {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--space-2);
+.kartu {
+  flex: 1 1 16rem;           
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-1);
+  padding: var(--card-pad);
 }
 
 footer {
@@ -53,10 +54,4 @@ footer {
   border-top: 1px solid var(--color-border);
   color: var(--color-fg);     
   font-size: var(--text-sm);
-}
-
-.galeri {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-  gap: var(--space-4);
 }

@@ -1,0 +1,42 @@
+/* 1. GAYA DASAR (Mobile / Layar Sempit) */
+.isi {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+.katalog {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-4);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 48rem) {
+  .katalog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 60rem) {
+  .isi {
+    grid-template-columns: 16rem 1fr;
+  }
+  
+  .katalog {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
