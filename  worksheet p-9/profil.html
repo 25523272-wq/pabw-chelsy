@@ -1,153 +1,107 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chelsy K-Drama Vault</title>
-    
-    <!-- Urutan CSS ini sudah benar -->
-    <link rel="stylesheet" href="tokens.css">
-    <link rel="stylesheet" href="base.css">
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="komponen.css">
-    <link rel="stylesheet" href="tema.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chelsy K-Drama Vault — Pinkflix</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
 </head>
-<body>
+<body class="pink-theme">
+  <div class="page">
+
+    <!-- TOMBOL PENGALIH TEMA GELAP/TERANG -->
+    <div class="pembungkus-tema">
+      <input type="checkbox" id="tema" class="pengalih-tema">
+      <label for="tema" class="tombol-tema">Mode Gelap / Terang</label>
+    </div>
     
-    <!-- Pembungkus utama Worksheet P5 dimulai di sini -->
-    <div class="page">
+    <!-- HEADER NAVBAR -->
+    <header class="header-vault">
+      <h1 class="logo-title">CHELSY <span>PINKFLIX</span></h1>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#koleksi-drama">Beranda</a></li>
+          <li><a href="#tambah-drama">+ Tambah Drama</a></li>
+          <li><a href="#tentang-saya">Profil</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO BANNER VISUAL -->
+      <section class="hero-banner">
+        <div class="hero-content">
+          <span class="hero-badge">N-SERIES • CHELSY'S VAULT</span>
+          <h2>K-Drama Vault Collection</h2>
+          <p>Koleksi drama Korea terbaik pilihan Chelsy. Jelajahi rekomendasi, ulasan rating, dan daftar tontonan favoritmu di satu tempat.</p>
+        </div>
+      </section>
+
+      <!-- LEMBAR B & C: DAFTAR K-DRAMA & FILTER -->
+      <section id="koleksi-drama" class="bagian-p9">
+        <div class="section-top">
+          <h2>Daftar K-Drama Favorit</h2>
+
+          <!-- Baris Tombol Filter (Lembar C - Event Delegation) -->
+          <div id="baris-filter" class="baris-filter">
+            <button class="filter aktif" data-kategori="semua">Semua</button>
+            <button class="filter" data-kategori="selesai">Selesai Ditonton</button>
+            <button class="filter" data-kategori="belum">Belum Selesai</button>
+          </div>
+        </div>
+
+        <!-- Pesan Kosong (Lembar D) -->
+        <p id="pesan-kosong" class="pesan-kosong" hidden>Belum ada K-Drama di kategori ini.</p>
         
-        <!-- Tombol Tema -->
-        <input type="checkbox" id="tema" class="pengalih-tema">
-        <label for="tema" class="tombol-tema">Tema gelap</label>
+        <!-- Grid Kartu Poster (Lembar B) -->
+        <ul id="daftar-proyek" class="daftar-drama"></ul>
+      </section>
 
-        <!-- TODO C.1: header dan nav -->
-        <header>
-            <h1>Chelsy K-Drama Vault</h1>
-            <nav aria-label="Navigasi utama">
-                <ul>
-                    <li><a href="#daftar-kdrama">Daftar K-Drama</a></li>
-                    <li><a href="#tambah-kdrama">Tambah K-Drama</a></li>
-                    <li><a href="#tentang-saya">Tentang Saya</a></li>
-                </ul>
-            </nav>
-        </header>
+      <!-- LEMBAR D: FORM TAMBAH DRAMA -->
+      <section id="tambah-drama" class="bagian-p9">
+        <h2>+ Tambah K-Drama Baru</h2>
+        
+        <form id="form-tambah" class="form-vault">
+          <div class="kolom-form">
+            <label for="input-judul">Judul Drama:</label>
+            <input type="text" id="input-judul" name="judul" placeholder="Ketik judul drama...">
+            <span id="galat-judul" class="pesan-galat" hidden>Judul tidak boleh kosong atau hanya spasi.</span>
+          </div>
 
-        <!-- TODO C.2: main pembungkus utama -->
-        <main>
-            <!-- TODO D.1: section pertama berisi tabel data & gambar -->
-            <section id="daftar-kdrama">
-                <h2>Daftar K-Drama Favorit</h2>
-                
-                <table>
-                    <div class="table-wrap">
-                    <caption>Daftar drama Korea yang pernah ditonton beserta genre, tahun rilis, dan rating</caption>
-                    <thead>
-                        <tr>
-                            <th scope="col">Judul Drama</th>
-                            <th scope="col">Genre</th>
-                            <th scope="col">Tahun Rilis</th>
-                            <th scope="col">Rating Saya</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">The Trauma Code: Heroes on Call</th>
-                            <td>medical drama, action, and comedy</td>
-                            <td>2025</td>
-                            <td>100/10</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Twenty-Five Twenty-One</th>
-                            <td>Coming-of-age, Drama</td>
-                            <td>2022</td>
-                            <td>9/10</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Resident Playbook</th>
-                            <td>Medical, Slice of Life</td>
-                            <td>2020</td>
-                            <td>8/10</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Hometown Cha-Cha-Cha</th>
-                            <td>Romantic, Comedy</td>
-                            <td>2021</td>
-                            <td>9.5/10</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Can This Love Be Translated?</th>
-                            <td>Romantic, Comedy</td>
-                            <td>2026</td>
-                            <td>8.5/10</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Queen of Tears</th>
-                            <td>Romance</td>
-                            <td>2024</td>
-                            <td>9.2/10</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Bloodhounds</th>
-                            <td>Action</td>
-                            <td>2023</td>
-                            <td>10/10</td>
-                        </tr>
-                    </tbody>
-                </table>
+          <div class="form-grid-2">
+            <div class="kolom-form">
+              <label for="input-genre">Genre:</label>
+              <input type="text" id="input-genre" name="genre" placeholder="Contoh: Romance, Medical">
+            </div>
 
-                <figure>
-                    <img src="IMG_2957.JPG" alt="Poster gabungan beberapa drama Korea favorit pilihan Chelsy" width="690" height="400" loading="lazy">
-                </figure>
-            </section>
+            <div class="kolom-form">
+              <label for="input-rating">Rating Saya (1 - 10):</label>
+              <input type="text" id="input-rating" name="rating" placeholder="Contoh: 9.5">
+            </div>
+          </div>
 
-            <!-- TODO E.1: section kedua berisi form -->
-            <section id="tambah-kdrama">
-                <h2>Tambah K-Drama Baru</h2>
-                
-                <form id="form-tambah"></form>
-                
-                    <p>
-                        <label for="judul-drama">Judul Drama</label>
-                        <input type="text" id="judul-drama" name="judul-drama" required>
-                    </p>
-                    <p>
-                        <label for="genre-drama">Genre</label>
-                        <input type="text" id="genre-drama" name="genre-drama" required>
-                    </p>
-                    <p>
-                        <label for="rating-drama">Rating Saya (1 - 10)</label>
-                        <input type="number" id="rating-drama" name="rating-drama" min="1" max="10" step="0.5" required>
-                    </p>
-                    <button type="submit">Simpan</button>
-                </form>
-            </section>
-            
-            <section id="tentang-saya">
-                <h2>Tentang Saya</h2>
-                <p>Halaman ini dikelola oleh Chelsy Alfaddhillah sebagai tugas PABW.</p>
-            </section>
-        </main>
+          <div class="kolom-form">
+            <label for="input-gambar">Jalur Gambar / URL Poster (Opsional):</label>
+            <input type="text" id="input-gambar" name="gambar" placeholder="Contoh: images/nama-foto.jpeg">
+          </div>
 
-        <!-- TODO C.3: footer -->
-        <footer>
-            <p>Chelsy Alfaddhillah 25523272</p>
-        </footer>
+          <button type="submit" id="tombol-kirim" class="btn-pink" disabled>+ Simpan Ke Vault</button>
+        </form>
+      </section>
 
-    </div> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- TENTANG SAYA -->
+      <section id="tentang-saya" class="bagian-p9 footer-section">
+        <p>Halaman ini dikelola oleh <strong>Chelsy Alfaddhillah</strong> (NIM: 25523272) sebagai tugas PABW.</p>
+      </section>
+    </main>
 
-<link rel="stylesheet" href="tokens.css">
-<link rel="stylesheet" href="base.css">
-<link rel="stylesheet" href="layout.css">
-<link rel="stylesheet" href="komponen.css">
-<link rel="stylesheet" href="tema.css">
-<link rel="stylesheet" href="responsif.css">
-
-
-</div>
+    <!-- SAMBUNGAN JAVASCRIPT P9 -->
     <script type="module" src="js/app.js"></script>
-    <script type="module" src="js/app.js"></script>
-  <script type="module" src="js/dom.js"></script>
+    <script type="module" src="js/dom.js"></script>
+  </div>
 </body>
 </html>
