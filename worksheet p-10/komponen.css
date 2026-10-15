@@ -53,7 +53,6 @@ body {
   padding: 1.5rem 1.25rem 3rem 1.25rem;
 }
 
-/* SAKELAR TEMA GELAP/TERANG */
 .pembungkus-tema {
   display: flex;
   align-items: center;
@@ -111,7 +110,6 @@ body {
 
 .header-vault nav a:hover { color: var(--accent-pink); }
 
-/* HERO BANNER VISUAL */
 .hero-banner {
   background: var(--hero-bg);
   border: 1px solid var(--border-color);
@@ -165,7 +163,6 @@ body {
   margin: 0;
 }
 
-/* FILTER BUTTONS PILL */
 .baris-filter {
   display: flex;
   gap: 0.5rem;
@@ -196,7 +193,6 @@ body {
   box-shadow: 0 4px 12px rgba(255, 42, 133, 0.35);
 }
 
-/* GRID KARTU POSTER */
 .daftar-drama {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -223,7 +219,6 @@ body {
   box-shadow: var(--shadow-hover);
 }
 
-/* POSTER BOX & BADGES */
 .poster-box {
   position: relative;
   width: 100%;
@@ -303,7 +298,6 @@ body {
   margin: 0;
 }
 
-/* PESAN KOSONG */
 .pesan-kosong {
   background: rgba(255, 42, 133, 0.08);
   border: 1px dashed var(--border-color);
@@ -313,7 +307,6 @@ body {
   text-align: center;
 }
 
-/* FORM STYLES */
 .form-vault {
   background: var(--bg-section);
   border: 1px solid var(--border-color);
