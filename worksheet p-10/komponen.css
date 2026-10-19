@@ -18,7 +18,7 @@
   --hero-bg: linear-gradient(135deg, #4a133d 0%, #20081d 100%);
 }
 
-/* SAKELAR TEMA GELAP (DAPAT DIALIHKAN LEWAT CHECKBOX) */
+/* SAKELAR TEMA GELAP*/
 :root:has(#tema:checked),
 body:has(#tema:checked) {
   --bg-main: #0d040f;
@@ -67,7 +67,6 @@ body {
 .tombol-tema { cursor: pointer; user-select: none; }
 .pengalih-tema { cursor: pointer; accent-color: var(--accent-pink); }
 
-/* NAVBAR & HEADER */
 .header-vault {
   display: flex;
   justify-content: space-between;
