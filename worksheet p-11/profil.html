@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chelsy's K-Drama Vault</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="komponen.css">
+  <link rel="stylesheet" href="tema.css">
+</head>
+<body class="pink-theme">
+  <div class="page">
+
+    <div class="pembungkus-tema">
+      <input type="checkbox" id="tema" class="pengalih-tema">
+      <label for="tema" class="tombol-tema">Mode Gelap / Terang</label>
+    </div>
+
+    <header class="header-vault">
+      <h1 class="logo-title">CHELSY <span>DRAMALAND</span></h1>
+      <nav aria-label="Navigasi utama">
+        <ul>
+          <li><a href="#koleksi-drama">Beranda</a></li>
+          <li><a href="#tambah-drama">+ Tambah Drama</a></li>
+          <li><a href="#tentang-saya">Profil</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO BANNER -->
+      <section class="hero-banner">
+        <div class="hero-content">
+          <span class="hero-badge">C-SERIES • CHELSY'S VAULT</span>
+          <h2>K-Drama Vault Collection</h2>
+          <p>Arsip tontonan drama Korea pribadi Chelsy Alfaddhillah </p>
+        </div>
+      </section>
+
+      <!-- DAFTAR K-DRAMA & FILTER -->
+      <section id="koleksi-drama" class="bagian-p9">
+        <div class="section-top">
+          <h2>Daftar K-Drama Favorit</h2>
+
+          <div id="baris-filter" class="baris-filter">
+            <button class="filter aktif" data-kategori="semua">Semua</button>
+            <button class="filter" data-kategori="selesai">Selesai Ditonton</button>
+            <button class="filter" data-kategori="belum">Belum Selesai</button>
+          </div>
+        </div>
+
+        <!-- ELEMEN KEADAAN ANTARMUKA (MEMUAT & KOSONG/GAGAL) -->
+        <p id="muat" class="pesan-kosong" hidden>Memuat data K-Drama...</p>
+        <p id="pesan-kosong" class="pesan-kosong" hidden>Belum ada data K-Drama.</p>
+        
+        <!-- Grid Kartu Poster -->
+        <ul id="daftar-proyek" class="daftar-drama"></ul>
+      </section>
+
+      <!-- FORM TAMBAH DRAMA -->
+      <section id="tambah-drama" class="bagian-p9">
+        <h2>+ Tambah K-Drama Baru</h2>
+        
+        <form id="form-tambah" class="form-vault">
+          <div class="kolom-form">
+            <label for="input-judul">Judul Drama:</label>
+            <input type="text" id="input-judul" name="judul" placeholder="Ketik judul drama...">
+            <span id="galat-judul" class="pesan-galat" hidden>Judul tidak boleh kosong atau hanya spasi.</span>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="kolom-form">
+              <label for="input-genre">Genre:</label>
+              <input type="text" id="input-genre" name="genre" placeholder="Contoh: Romance, Medical">
+            </div>
+
+            <div class="kolom-form">
+              <label for="input-rating">Rating Saya (1 - 10):</label>
+              <input type="text" id="input-rating" name="rating" placeholder="Contoh: 9.5">
+            </div>
+          </div>
+
+          <div class="kolom-form">
+            <label for="input-gambar">Jalur Gambar / URL Poster (Opsional):</label>
+            <input type="text" id="input-gambar" name="gambar" placeholder="Contoh: images/nama-foto.jpg">
+          </div>
+
+          <button type="submit" id="tombol-kirim" class="btn-pink" disabled>+ Simpan Ke Vault</button>
+        </form>
+      </section>
+
+      <!-- TENTANG SAYA -->
+      <section id="tentang-saya" class="bagian-p9 footer-section">
+        <p>Halaman ini dikelola oleh <strong>Chelsy Alfaddhillah</strong> (NIM: 25523272) sebagai tugas PABW.</p>
+      </section>
+    </main>
+
+    <!-- HANYA SATU BARIS SCRIPT Sesuai Aturan P10 -->
+    <script type="module" src="js/app.js"></script>
+  </div>
+
+  <!-- Di bagian baris-filter -->
+<div id="baris-filter" class="baris-filter">
+  <button class="filter aktif" data-kategori="semua">Semua</button>
+  <button class="filter" data-kategori="selesai">Selesai Ditonton</button>
+  <button class="filter" data-kategori="belum">Belum Selesai</button>
+  <button id="btn-atur-ulang" class="filter btn-reset" title="Atur Ulang Pilihan">↺ Reset</button>
+</div>
+</body>
+</html>
