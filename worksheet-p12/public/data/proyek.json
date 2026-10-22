@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "judul": "The Trauma Code: Heroes on Call",
+    "genre": "Medical, Action",
+    "rating": "10/10",
+    "gambar": "/images/code.jpeg"
+  },
+  {
+    "id": 2,
+    "judul": "Twenty-Five Twenty-One",
+    "genre": "Coming-of-age, Romance",
+    "rating": "9/10",
+    "gambar": "/images/25.jpeg"
+  },
+  {
+    "id": 3,
+    "judul": "Resident Playbook",
+    "genre": "Medical, Slice of Life",
+    "rating": "8/10",
+    "gambar": "/images/resident.jpeg"
+  },
+  {
+    "id": 4,
+    "judul": "Hometown Cha-Cha-Cha",
+    "genre": "Romantic, Comedy",
+    "rating": "9.5/10",
+    "gambar": "/images/hometown.jpeg"
+  },
+  {
+    "id": 5,
+    "judul": "Can This Love Be Translated?",
+    "genre": "Romantic, Comedy",
+    "rating": "8.5/10",
+    "gambar": "/images/love.jpeg"
+  },
+  {
+    "id": 6,
+    "judul": "Queen of Tears",
+    "genre": "Romance, Drama",
+    "rating": "9.2/10",
+    "gambar": "/images/Queen of Tears.jpeg"
+  },
+  {
+    "id": 7,
+    "judul": "Bloodhounds",
+    "genre": "Action, Crime",
+    "rating": "9/10",
+    "gambar": "/images/BloodHounds.jpeg"
+  }
+]
